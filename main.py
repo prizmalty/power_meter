@@ -41,7 +41,7 @@ if annual_income is not None and follower is not None and grip_strength is not N
     data_dict_list = []
     data_dict_list.append(user_data_dict)
     user_data_pdf = pd.DataFrame(data_dict_list)
-    st.dataframe(user_data_pdf.style.hide_index())
+    st.dataframe(user_data_pdf)
     #width=1000,height=100)
 else:
     pass
