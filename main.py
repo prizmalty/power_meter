@@ -2,7 +2,9 @@ import streamlit as st
 import time
 from PIL import Image
 import pandas as pd
-pd.set_option('display.max_colwidth', -1)
+import numpy as np
+#pd.set_option('display.max_colwidth', -1)
+
 
 st.title("強さスカウター")
 
