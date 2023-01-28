@@ -30,7 +30,8 @@ sex=st.selectbox("あなたの性別",sex_options)
 age=st.number_input("年齢",0,200,0)
 work = st.text_input("あなたの職業")
 
-if annual_income is not None and follower is not None and grip_strength is not None: 
+#if annual_income is not None and follower is not None and grip_strength is not None: 
+if annual_income and follower and grip_strength: 
     your_power = int(annual_income)*int(follower)*int(grip_strength)
     "あなたの力：",str(your_power)
     user_data_dict = {
@@ -48,4 +49,4 @@ if annual_income is not None and follower is not None and grip_strength is not N
     st.dataframe(user_data_pdf)
     #width=1000,height=100)
 else:
-    pass
+    st.empty()
