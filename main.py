@@ -5,11 +5,13 @@ import pandas as pd
 pd.set_option('display.max_colwidth', -1)
 
 st.title("強さスカウター")
+
+image = Image.open("fukkin_man.png")
+st.image(image,caption="あなたのイマの強さを出してみよう！",use_column_width =False)
+
 """
 ## あなたの強さ
 """
-image = Image.open("fukkin_man.png")
-st.image(image,caption="あなたのイマの強さを出してみよう！",use_column_width =False)
 annual_income = st.number_input("年収（万円）",0,10000000,0)
 "あなたの年収:",annual_income,"万円"
 follower = st.number_input("総SNSフォロワー数（人）",0,10000000000,0)
